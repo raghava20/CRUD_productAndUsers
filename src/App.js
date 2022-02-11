@@ -53,10 +53,10 @@ function App() {
     <>
       <Router>
         <div style={{ display: "grid", gridTemplateColumns: "15% 85%" }}>
-          <div>
+          <div class="sidebar">
             <SideBar />
           </div>
-          <div>
+          <div class="p-2 overflow-auto">
             <Routes>
               <Route path="/ProductAndUsers" element={<Content data={data} setData={setData} />} />
               <Route exact path="/" element={<Content data={data} setData={setData} />} />
